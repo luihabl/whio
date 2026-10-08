@@ -29,6 +29,7 @@ modules:
         # Utils
         - git
         - tailscale
+        - incus
         # Containers
         - podman-docker
         - nvidia-container-toolkit
