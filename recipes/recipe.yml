@@ -19,6 +19,7 @@ modules:
 
   - type: dnf
     repos:
+      nonfree: rpmfusion
       cleanup: true
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
@@ -36,6 +37,10 @@ modules:
         # Drivers (GPU)
         - vulkan-tools
         - libva-nvidia-driver
+        - nvidia-driver-libs.i686
+        # Steam
+        - steam
+        - steam-devices
     remove:
       packages:
         - firefox
